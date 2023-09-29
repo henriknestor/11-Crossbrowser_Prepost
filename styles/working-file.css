@@ -1,16 +1,116 @@
+/* ---- Global ---- */
+
 *, *::before, *::after {
     box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
   }
+
+/* ---- End of global ---- */
+
+/* ---- Header ---- */
+
+header {
+    position: sticky;
+    top: 0;
+}
 
 nav {
     background-color: red;
-    max-width: 1110px;
-    height: 180px;
+    max-width: 1150px;
+    height: 140px;
     margin: 0 auto 0;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 20px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    color: #111;
+    text-align: right;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.346px;
+    padding-left: 30px;
+}
+
+/* ---- End of header ---- */
+
+/* ---- Content ---- */
+
+main {
+    background-color: aqua;
+    max-width: 1150px;
+    margin: 0 auto 0;
+    padding: 40px 20px 0 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
 }
 
 h1 {
-    font-family: 'Mulish', sans-serif;
-    font-weight: 700;
     margin: 0;
+    max-width: 635px;
+    color: #111;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 150% */
 }
+
+.bluetext {
+    color: #4A4FF2;
+}
+
+h2 {
+    margin: 0 0 32px 0;
+    color: #4A4FF2;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.423px;
+}
+
+/* ---- End of content ---- */
+
+/* ---- Footer ---- */
+
+footer {
+    background-color: green;
+    max-width: 1150px;
+    height: 140px;
+    margin: 0 auto 0;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_right {
+    background-color: brown;
+    max-width: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_nav {
+    background-color: green;
+}
+
+.social-media-icons {
+    background-color: yellow;
+}
+
+/* ---- End of footer ---- */
