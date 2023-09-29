@@ -29,16 +29,24 @@ nav {
     height: 20px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 li {
     list-style: none;
     display: inline-block;
     color: #111;
-    text-align: right;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.346px;
+}
+
+.header-nav {
+    text-align: right;
     padding-left: 30px;
 }
 
@@ -56,6 +64,22 @@ main {
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container__text {
+background-color: brown;
+}
+
+.container__quote {
+    background-color: yellow;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    align-content: end;
+    margin: 0 auto 0;
+    padding: 0;
 }
 
 h1 {
@@ -66,6 +90,24 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: 60px; /* 150% */
+}
+
+h6 {
+    color: #111;
+    opacity: 0.6;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.rectangle {
+    width: 30px;
+    height: 2px;
+    opacity: 0.5;
+    background: #111;
+    margin-bottom: -30px;
 }
 
 .bluetext {
@@ -80,6 +122,31 @@ h2 {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.423px;
+}
+
+.grid__container {
+    background-color: purple;
+    display: grid;
+    width: 100%;
+    height: 150vh;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(3 1fr);
+    grid-gap: 20px;
+}
+
+.one {
+    background: #007F5F;
+    grid-area: 1/1/2/2;
+}
+
+.two {
+    background-color: blue;
+    grid-area: 2/2/3/3;
+}
+
+.three {
+    background-color: brown;
+    grid-area: 3/3/4/4;
 }
 
 /* ---- End of content ---- */
@@ -98,19 +165,16 @@ footer {
 }
 
 .footer_right {
-    background-color: brown;
-    max-width: 190px;
+    max-width: 350px;
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer_nav {
-    background-color: green;
-}
-
-.social-media-icons {
-    background-color: yellow;
+    text-align: left;
+    padding-right: 30px;
 }
 
 /* ---- End of footer ---- */
