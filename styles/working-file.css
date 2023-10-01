@@ -3,7 +3,68 @@
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
+    color: #111;
   }
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 150% */
+}
+
+h2 {
+    margin: 0;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px; /* 135.714% */
+}
+
+
+h3 {
+    margin: 0 0 32px 0;
+    color: #4A4FF2;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.423px;
+}
+
+h4 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h5 {
+    opacity: 0.6;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7em;
+    margin-top: 15px;
+}
+
+h6 {
+    opacity: 0.6;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.h7 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 
 /* ---- End of global ---- */
 
@@ -83,43 +144,12 @@ max-width: 635px;
     padding: 0;
 }
 
-h1 {
-    margin: 0;
-    color: #111;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 60px; /* 150% */
-}
-
-h2 {
-    margin: 0;
-    color: #111;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38px; /* 135.714% */
-}
-
-
-h3 {
-    margin: 0 0 32px 0;
-    color: #4A4FF2;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -0.423px;
-}
-
-h6 {
-    color: #111;
-    opacity: 0.6;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 20px;
+.container__list {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0 auto 0;
 }
 
 .rectangle {
@@ -210,6 +240,13 @@ h6 {
 .twelve {
     background-color: brown;
     grid-area: 27/3/span 6/4;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background: #D8D8D8;
+    margin-bottom: 50px;
 }
 
 /* ---- End of content ---- */
