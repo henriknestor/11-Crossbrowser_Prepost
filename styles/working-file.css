@@ -38,6 +38,7 @@ h4 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 0;
 }
 
 h5 {
@@ -63,6 +64,23 @@ h6 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 4px;
+}
+
+.h8 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 7px;
+}
+
+.h9 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    opacity: 0.6;
 }
 
 
@@ -247,6 +265,40 @@ max-width: 635px;
     width: 100%;
     background: #D8D8D8;
     margin-bottom: 50px;
+}
+
+.showoff__container {
+    background: yellow;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.showoff__title {
+    background: blueviolet;
+    min-width: 320px;
+}
+
+.showoff__content {
+    background: gainsboro;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.showoff__semititle {
+    background: pink;
+    width: 320px;
+}
+
+.showoff__example {
+    background: red;
+    max-width: 200px;
+    margin-bottom: 50px;
+}
+
+.showoff__year {
+    text-align: right;
+    padding-left:70px;
 }
 
 /* ---- End of content ---- */
