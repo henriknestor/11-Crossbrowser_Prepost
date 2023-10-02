@@ -6,6 +6,22 @@
     color: #111;
   }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007F5F;
+}
+
+p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    opacity: 0.8;
+}
+
 h1 {
     margin: 0;
     font-size: 40px;
@@ -300,6 +316,34 @@ max-width: 635px;
     text-align: right;
     padding-left:70px;
 }
+
+/* ---- End of start page ---- */
+
+/* ---- Projects page ---- */
+
+.splash {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.threepics {
+    background: brown;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.threepics__pic {
+    width: 100%;
+    max-width: 350px;
+    min-width: 300px;
+    max-height: 400px;
+}
+
+/* ---- End of projects page ---- */
 
 /* ---- End of content ---- */
 
