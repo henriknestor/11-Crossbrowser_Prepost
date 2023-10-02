@@ -22,8 +22,6 @@ p {
     opacity: 0.8;
 }
 
-/* It seems like opacity plays strangely with the top navbar, how to avoid this? */
-
 h1 {
     margin: 0;
     font-size: 40px;
@@ -109,6 +107,7 @@ h6 {
 header {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 nav {
@@ -384,21 +383,33 @@ max-width: 635px;
 /* ---- Contact page ---- */
 
 .input__container {
-    background-color: blue;
+    /* background-color: blue; */
     width: 100%;
     max-width: 475px;
+    margin-left: 20px;
 }
 
-.input__field {
-    background-color: orange;
+input {
+    background-color: aqua;
     height: 37px;
-    /* width: 100%;
+    width: 100%;
     max-width: 475px;
-    min-width: 200px; */
+    min-width: 200px;
     border: none;
     outline-style: none;
     outline-color: none;
-    margin-bottom: 46px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.input__line {
+    background: #D8D8D8;
+    height: 1px;
+    margin-bottom: 40px;
 }
 
 button {
