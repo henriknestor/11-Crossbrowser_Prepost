@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-    color: #007F5F;
+    color: #4A4FF2;
 }
 
 p {
@@ -21,6 +21,8 @@ p {
     line-height: 26px; /* 162.5% */
     opacity: 0.8;
 }
+
+/* It seems like opacity plays strangely with the top navbar, how to avoid this? */
 
 h1 {
     margin: 0;
@@ -321,6 +323,39 @@ max-width: 635px;
 
 /* ---- Projects page ---- */
 
+.project-info {
+    background-color: olive;
+    width: 100%;
+    max-width: 335px;
+}
+
+.project-info__row {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    margin-bottom: 19px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.project-info__title {
+    background-color: red;
+    width: 137px;
+    opacity: 0.5;
+}
+
+.project-info__content {
+    background-color: purple;
+}
+
+.project-info__line {
+    background: #D8D8D8;
+    height: 1px;
+}
+
 .splash {
     width: 100%;
     margin-top: 60px;
@@ -329,6 +364,7 @@ max-width: 635px;
 
 .threepics {
     background: brown;
+    margin: 45px auto 45px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -344,6 +380,47 @@ max-width: 635px;
 }
 
 /* ---- End of projects page ---- */
+
+/* ---- Contact page ---- */
+
+.input__container {
+    background-color: blue;
+    width: 100%;
+    max-width: 475px;
+}
+
+.input__field {
+    background-color: orange;
+    height: 37px;
+    /* width: 100%;
+    max-width: 475px;
+    min-width: 200px; */
+    border: none;
+    outline-style: none;
+    outline-color: none;
+    margin-bottom: 46px;
+}
+
+button {
+    background-color: #4A4FF2;
+    width: 125px;
+    height: 50px;
+    flex-shrink: 0;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+button:hover {
+    background-color: #5f64fc;
+    cursor: pointer;
+}
+
+/* ---- End of contact page ---- */
 
 /* ---- End of content ---- */
 
